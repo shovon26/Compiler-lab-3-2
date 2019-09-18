@@ -54,6 +54,78 @@ Math operators : =,=,=,=,+,=,-
 Logical Operators: <,>,>
 Brackets : (,),{,(,),{,},{,},}
 Others : # , . , :   .
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<bits/stdc++.h>
+
+using namespace std;
+char M[]={"(ab*c+(def)++a*d+e)+"};
+
+void _rec(){
+printf("Recognize the string:\n");
+}
+void _not(){
+printf("Not Recognize the string\n");
+}
+
+void star_op(char ch[])
+{
+     int len=strlen(ch);
+     
+}
+int main()
+{
+    printf("Main string : (ab*c+(def)++a*d+e)+\n\n");
+    char str[100];
+    scanf("%s",str);
+
+    if(str[0]!='a' || str[1]=='a')
+    {
+        _rec();
+        return 0;
+    }
+
+    vector<char>vv;
+
+    int len=strlen(str);
+    set<char>st1;
+    int id=0;
+    for(int i=0;i<len;i++)
+    {
+        if(str[i]=='c'){
+            id=i;
+            break;
+        }
+    }
+    
+    for(int i=0;i<id;i++)
+    {
+        st1.insert(str[i]);
+    }
+    
+    if(st1.size()>=2)
+    {
+        _not();
+        return 0;  
+    }
+
+    return 0;
+}
+
+
+///(ab*c+(def)++a*d+e)+
+
  
 
   
