@@ -1,0 +1,24 @@
+///////////////
+Linux Command:::
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt get-install flex
+sudo apt get-install bison
+//////////////
+
+Steps:
+1.Open a file called filename.l
+2.If there is any file used in programme then open a txt file called input.txt
+3. Change directory of your Computer where you saved the lex file.
+4. Compile with "flex filename.l" command.
+5.If there is no error in the steps of compilation then check your directory with "ls" command.
+6.You will see a file called "lex.yy.c" which is created automatically after successful compilation.
+7.Command "cc lex.yy.c -lfl" for output of the programme.
+8. Command "./a.out" for the output.
+
+Thats all about the linux setup!
+
+/////////////////
+
+ 
