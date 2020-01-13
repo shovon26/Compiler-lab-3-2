@@ -1,0 +1,11 @@
+/////////////LINK///////////
+1.    https://www.epaperpress.com/lexandyacc/pry2.html
+
+2.    https://github.com/jengelsma/yacc-tutorial
+
+////Command in linux////////
+
+1.lex filename.l
+2.yacc -d filename.y
+3.gcc lex.yy.c y.tab.c -w    ||||   or      gcc lex.yy.c y.tab.c -o output
+4. ./a.out                   ||||   or      ./output.out
